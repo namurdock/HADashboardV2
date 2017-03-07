@@ -1,0 +1,18 @@
+2017-03-07 21:14:26.198252 INFO AppDaemon Version 1.5.2 starting
+2017-03-07 21:14:37.308016 INFO Got initial state
+2017-03-07 21:14:37.309435 INFO App initialization complete
+2017-03-07 21:14:37.328965 INFO Connected to Home Assistant 0.39.0.dev0
+2017-03-07 21:16:16.002742 INFO /home/pi/appdaemon_dashboard/appdaemon/conf/appdaemon.cfg modified
+2017-03-07 21:16:27.004321 INFO /home/pi/appdaemon_dashboard/appdaemon/conf/appdaemon.cfg modified
+2017-03-07 21:19:24.123165 INFO AppDaemon Version 2.0.0beta1 starting
+2017-03-07 21:19:24.123827 INFO Apps are disabled
+2017-03-07 21:19:29.388787 INFO Got initial state
+2017-03-07 21:19:29.389399 INFO Starting dashboard
+2017-03-07 21:19:29.406662 INFO Listening on ('192.168.1.199', 5050)
+2017-03-07 21:19:29.408770 INFO Connected to Home Assistant 0.39.0.dev0
+2017-03-07 21:20:09.100165 INFO Compiling dashboard 'Dashing'
+2017-03-07 21:20:09.866635 INFO function [compile_dash] finished in 798 ms
+2017-03-07 21:20:11.815768 INFO New dashboard connected: Main Panel
+2017-03-07 21:20:16.989309 INFO function [compile_dash] finished in 10 ms
+2017-03-07 21:20:17.414657 INFO Dashboard disconnected
+2017-03-07 21:20:18.142157 INFO New dashboard connected: Main Panel

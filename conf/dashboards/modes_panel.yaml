@@ -1,0 +1,9 @@
+school_mode:
+    widget_type: switch
+    title: School Mode
+    entity: input_boolean.school_mode
+
+guest_mode:
+    widget_type: switch
+    title: Guest Mode
+    entity: input_boolean.guest_mode

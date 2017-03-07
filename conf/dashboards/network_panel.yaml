@@ -1,0 +1,13 @@
+upload:
+    widget_type: sensor
+    title: Upload
+    units: "Mbit/s"
+    precision: 2
+    entity: sensor.speedtest_upload
+
+download:
+    widget_type: sensor
+    title: Download
+    units: "Mbit/s"
+    precision: 2
+    entity: sensor.speedtest_download

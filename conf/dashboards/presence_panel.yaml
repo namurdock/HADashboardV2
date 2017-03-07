@@ -1,0 +1,13 @@
+nick_presence:
+    widget_type: device_tracker
+    title: Nick
+    device: nick_nick
+    icon_on: fa-male
+    icon_off: fa-male
+
+lucy_presence:
+    widget_type: device_tracker
+    title: Lucy
+    device: lucy_lucy
+    icon_on: fa-female
+    icon_off: fa-female

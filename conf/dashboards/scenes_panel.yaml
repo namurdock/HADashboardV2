@@ -1,0 +1,11 @@
+bedtime:
+    widget_type: binary
+    title: Bedtime
+    icon_on: fa-star-o
+    icon_off: fa-star-o
+    entity: scene.bedtime
+
+all_off:
+    widget_type: binary
+    title: All Off
+    entity: script.interior_off

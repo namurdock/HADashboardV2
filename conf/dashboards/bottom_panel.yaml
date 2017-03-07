@@ -1,0 +1,18 @@
+load_main_panel:
+    widget_type: navigate
+    title: Main Panel
+    icon: fa-home
+    url: /Dashing
+
+load_light_panel:
+    widget_type: navigate
+    title: Lighting
+    icon: fa-toggle-on
+    url: /Lights
+
+reload:
+    widget_type: reload
+    title: Reload
+
+layout:
+    - load_main_panel,load_light_panel,reload
