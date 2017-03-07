@@ -1,0 +1,109 @@
+
+#
+# Main arguments, all optional
+#
+title: Main Panel
+widget_dimensions: [120, 120]
+widget_margins: [5, 5]
+columns: 8
+
+#
+# Layout
+#    
+layout:
+    - clock(2x1), weather(2x2), upload(2x1)
+    - school_mode,guest_mode, download(2x1)
+    - nick_presence, lucy_presence,bedtime, all_off
+    - 
+    - load_main_panel, load_light_panel,reload
+
+
+clock:
+    widget_type: clock
+
+weather:
+    widget_type: weather
+    units: "&deg;C"
+
+## Presencs
+
+nick_presence:
+    widget_type: device_tracker
+    title: Nick
+    device: nick_nick
+    icon_on: fa-male
+    icon_off: fa-male
+
+lucy_presence:
+    widget_type: device_tracker
+    title: Lucy
+    device: lucy_lucy
+    icon_on: fa-female
+    icon_off: fa-female
+
+## Modes
+
+school_mode:
+    widget_type: switch
+    title: School Mode
+    entity: input_boolean.school_mode
+
+guest_mode:
+    widget_type: switch
+    title: Guest Mode
+    entity: input_boolean.guest_mode
+
+reload:
+    widget_type: reload
+    title: Reload
+
+
+## Scenes
+
+bedtime:
+    widget_type: binary
+    title: Bedtime
+    icon_on: fa-star-o
+    icon_off: fa-star-o
+    entity: scene.bedtime
+
+all_off:
+    widget_type: binary
+    title: All Off
+    entity: script.interior_off
+
+## Sensors
+
+upload:
+    widget_type: sensor
+    title: Upload
+    units: "Mbit/s"
+    precision: 2
+    entity: sensor.speedtest_upload
+
+download:
+    widget_type: sensor
+    title: Download
+    units: "Mbit/s"
+    precision: 2
+    entity: sensor.speedtest_download
+
+
+## Other Panels
+
+load_main_panel:
+    widget_type: navigate
+    title: Main Panel
+    icon: fa-home
+    url: /Dashing
+    #background_color: "#00f"
+    #icon_color: green
+    #icon_size: 200%
+    #title_color: red
+    #title_size: 200%
+
+load_light_panel:
+    widget_type: navigate
+    title: Lighting
+    icon: fa-toggle-on
+    url: /Lights

@@ -1,0 +1,93 @@
+
+#
+# Main arguments, all optional
+#
+title: Main Panel
+widget_dimensions: [120, 120]
+widget_margins: [5, 5]
+columns: 8
+
+#
+# Layout
+#    
+layout:
+    - kitchen_outer,kitchen_inner
+    - dining_room_outer,dining_room_table,hall
+    - main_light,standing_lamp,table_lamp
+    - bedroom_lamp
+    - load_main_panel, load_light_panel,reload
+
+## Lights
+
+hall:
+  widget_type: light
+  title: Hall
+  title2: Light
+  entity: light.hallway
+
+kitchen_inner:
+  widget_type: light
+  title: Kitchen
+  title2: Inner
+  entity: light.kitchen_inner
+
+kitchen_outer:
+  widget_type: light
+  title: Kitchen
+  title2: Outer
+  entity: light.kitchen_outer
+
+dining_room_table:
+  widget_type: light
+  title: Dining
+  title2: Table
+  entity: light.dining_room_table
+
+dining_room_outer:
+  widget_type: light
+  title: Dining
+  title2: Outer
+  entity: light.dining_room_outer
+
+main_light:
+  widget_type: light
+  title: Living Room
+  title2: Main
+  entity: light.main_light
+
+
+standing_lamp:
+  widget_type: switch
+  title: Standing
+  title2: Lamp
+  entity: switch.standing_lamp
+
+table_lamp:
+  widget_type: switch
+  title: Table
+  title2: Lamp
+  entity: switch.table_lamp
+
+bedroom_lamp:
+  widget_type: switch
+  title: Bedroom
+  title2: Lamp
+  entity: switch.bedroom_lamp
+
+## Other Panels
+
+load_main_panel:
+    widget_type: navigate
+    title: Main Panel
+    icon: fa-home
+    url: /Dashing
+
+load_light_panel:
+    widget_type: navigate
+    title: Light
+    icon: fa-toggle-on
+    url: /Lights
+
+reload:
+    widget_type: reload
+    title: Reload
